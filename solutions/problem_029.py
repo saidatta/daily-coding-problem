@@ -1,9 +1,9 @@
-def encode_string(s):
+def encode_string(input_string):
     encoded_chars = list()
 
     count = 0
     prev_char = None
-    for char in s:
+    for char in input_string:
         if char == prev_char or not prev_char:
             count += 1
         else:

@@ -43,6 +43,8 @@ def get_missing_number(array):
             return i + 1
 
 
+3,4,-1
+
 assert get_missing_number([3, 4, -1, 1]) == 2
 assert get_missing_number([1, 2, 0]) == 3
 assert get_missing_number([1, 2, 5]) == 3

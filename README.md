@@ -231,14 +231,13 @@ You should be as efficient with time and space as possible.
 This problem was asked by Google.
 
 Suppose we represent our file system by a string in the following manner:
-
 The string "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext" represents:
 
 ```
 dir
     subdir1
     subdir2
-        file.ext
+        file.ext``
 ```
 
 The directory dir contains an empty sub-directory subdir1 and a sub-directory subdir2 containing a file file.ext.
@@ -344,9 +343,11 @@ Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string
 
 This problem was asked by Google.
 
-You are given an M by N matrix consisting of booleans that represents a board. Each True boolean represents a wall. Each False boolean represents a tile you can walk on.
+You are given an M by N matrix consisting of booleans that represents a board. Each True boolean represents a wall. 
+Each False boolean represents a tile you can walk on.
 
-Given this matrix, a start coordinate, and an end coordinate, return the minimum number of steps required to reach the end coordinate from the start. If there is no possible path, then return null. You can move up, left, down, and right. You cannot move through walls. You cannot wrap around the edges of the board.
+Given this matrix, a start coordinate, and an end coordinate, return the minimum number of steps required to reach the end coordinate from the start.
+ If there is no possible path, then return null. You can move up, left, down, and right. You cannot move through walls. You cannot wrap around the edges of the board.
 
 For example, given the following board:
 
@@ -357,7 +358,8 @@ For example, given the following board:
  [f, f, f, f]]
 ```
 
-and start = (3, 0) (bottom left) and end = (0, 0) (top left), the minimum number of steps required to reach the end is 7, since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
+and start = (3, 0) (bottom left) and end = (0, 0) (top left), the minimum number of steps required to reach the end is 7,
+ since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
 
 [Solution](solutions/problem_023.py)
 
@@ -519,8 +521,7 @@ For example, given the sequence [2, 1, 5, 7, 2, 0, 5], your algorithm should pri
 2
 ```
 
-[Solution](solutions/problem_033.py)
-
+[Solution](solutions/problem_035.py)
 ---
 
 #### Problem 34
@@ -1602,7 +1603,7 @@ This problem was asked by Google.
 You are in an infinite 2D grid where you can move in any of the 8 directions:
 
 ```
- (x,y) to
+    (x,y) to
     (x+1, y),
     (x - 1, y),
     (x, y+1),
@@ -5762,7 +5763,8 @@ Given this string, return the original integers in sorted order. In the example 
 
 This problem was asked by Spotify.
 
-You have access to ranked lists of songs for various users. Each song is represented as an integer, and more preferred songs appear earlier in each list. For example, the list `[4, 1, 7]` indicates that a user likes song `4` the best, followed by songs `1` and `7`.
+You have access to ranked lists of songs for various users. Each song is represented as an integer, and more preferred songs appear earlier in each list.
+For example, the list `[4, 1, 7]` indicates that a user likes song `4` the best, followed by songs `1` and `7`.
 
 Given a set of these ranked lists, interleave them to create a playlist that satisfies everyone's priorities.
 
